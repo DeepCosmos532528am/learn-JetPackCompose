@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Splash Screen theme-->
+    <style name="Theme.MySplashScreen" parent="Theme.SplashScreen">
+        <!--
+                windowSplashScreenBackground (in styles.xml): Defines the background color of the splash screen.
+        -->
+        <item name="windowSplashScreenBackground">@color/twitterBlue</item>
+
+        <!--
+                windowSplashScreenAnimatedIcon (in styles.xml): Specifies the animated logo or icon that will appear on the splash screen.
+        -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/daco</item>
+
+        <!--postSplashScreenTheme defines the app theme that will be applied after the splash screen finishes. This ensures a smooth transition from the splash screen to your main UI using the specified theme.
+
+        -->
+        <item name="postSplashScreenTheme">@style/Theme.SplashScreenJc</item>
+
+    </style>
+
+    <!--Main App theme-->
+    <style name="Theme.SplashScreenJc" parent="android:Theme.Material.Light.NoActionBar" />
+
+
+</resources>
+
+
+
