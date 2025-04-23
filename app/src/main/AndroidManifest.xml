@@ -10,12 +10,12 @@
         android:label="Splash Screen Jc"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SplashScreenJc"
+        android:theme="@style/Theme.JetpackCompose"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="Splash Screen Jc"
+            android:label="JetpackCompose"
             android:theme="@style/Theme.MySplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

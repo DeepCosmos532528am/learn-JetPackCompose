@@ -15,12 +15,12 @@
         <!--postSplashScreenTheme defines the app theme that will be applied after the splash screen finishes. This ensures a smooth transition from the splash screen to your main UI using the specified theme.
 
         -->
-        <item name="postSplashScreenTheme">@style/Theme.SplashScreenJc</item>
+        <item name="postSplashScreenTheme">@style/Theme.JetpackCompose</item>
 
     </style>
 
     <!--Main App theme-->
-    <style name="Theme.SplashScreenJc" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.JetpackCompose" parent="android:Theme.Material.Light.NoActionBar" />
 
 
 </resources>
