@@ -9,7 +9,7 @@ They are used to arrange UI elements either horizontally (Row) or vertically (Co
 🔸 Syntax
 
 ➤ Row
-![Screenshot 2025-04-25 020937.png](../../Pictures/Screenshots/Screenshot%202025-04-25%20020937.png)
+![Row Example](screenshots/row_example.png)
 
 ➤ Column
 ![Screenshot 2025-04-25 021109.png](../../Pictures/Screenshots/Screenshot%202025-04-25%20021109.png)
