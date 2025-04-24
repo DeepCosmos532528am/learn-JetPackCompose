@@ -58,11 +58,12 @@ fun LearnText_and_Modifiers(name: String = "Sachin") {
                 .width(140.dp)
                 .background(Color.Cyan)
                 .padding(60.dp),
-            fontStyle = Italic,
-
-            )
+            fontStyle = Italic,)
 
         Text(text = stringResource(id = R.string.developer_intro)) // Can create our text also in the string resource file and use here
+
+
+
     }
 }
 
