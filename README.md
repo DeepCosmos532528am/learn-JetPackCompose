@@ -14,7 +14,14 @@
     <p>They are used to arrange UI elements either horizontally (Row) or vertically (Column).</p>
                 <h4>🔸 Syntax</h4>
       <h5>➤ Row</h5>
-    <img src="assets/Screenshot-2025-04-25-015504.png" alt="Row Layout" width="500">
+    <code style="color: Orange">Row(
+    modifier = Modifier.fillMaxWidth(),
+    horizontalArrangement = Arrangement.SpaceBetween,
+    verticalAlignment = Alignment.CenterVertically
+) {
+    Text("Item 1")
+    Text("Item 2")
+}</code>
 <h5>➤ Column</h5>
                 <img src="../../Pictures/Screenshots/Screenshot%202025-04-25%20021109.png" alt="Column Layout" width="500">
 <h4>⚙️ Key Parameters</h4>
@@ -56,22 +63,19 @@
 <h4>📌 Common Arrangements</h4>
                 <img src="../../Pictures/Screenshots/Screenshot%202025-04-25%20021141.png" alt="Common Arrangements" width="500">
 <h4>Get the idea of Arrangements and Alignments for Row, Column, and Box layout (Box have Alignment only, not arrangements like Column and Row layouts)</h4>
-<code>
-  Axis:
-  Alignment = Cross Axis (Row = Vertical, Column = Horizontal)
-  Arrangement = Main Axis (Row = Horizontal, Column = Vertical)
-<br>  
-  Row:
-  RowAlignment: Top, CenterVertically, Bottom.
-  RowArrangement: Start, Center, End, SpaceBetween, SpaceAround, SpaceEvenly,
+<code>Axis:
+Alignment = Cross Axis (Row = Vertical, Column = Horizontal)
+Arrangement = Main Axis (Row = Horizontal, Column = Vertical)<br>  
+Row:
+RowAlignment: Top, CenterVertically, Bottom.
+RowArrangement: Start, Center, End, SpaceBetween, SpaceAround, SpaceEvenly,
                   Absolute.Left, Absolute.Right, Absolute.Center,
-                  Absolute.SpaceBetween, Absolute.SpaceAround, Absolute.SpaceEvenly. 
-<br>  
-  Column:
-  ColumnAlignment: Start, CenterHorizontally, End.
-  ColumnArrangement: Top, Center, Bottom, SpaceEvenly, SpaceBetween, SpaceAround.
-  Box:
-  BoxAlignment: TopStart, TopCenter, TopEnd, BottomStart, BottomCenter, BottomEnd,
+                  Absolute.SpaceBetween, Absolute.SpaceAround, Absolute.SpaceEvenly.<br>  
+Column:
+ColumnAlignment: Start, CenterHorizontally, End.
+ColumnArrangement: Top, Center, Bottom, SpaceEvenly, SpaceBetween, SpaceAround.
+Box:
+BoxAlignment: TopStart, TopCenter, TopEnd, BottomStart, BottomCenter, BottomEnd,
                 Center, CenterStart, CenterEnd.</code>
 
 <h4>✅ Best Practices</h4>
