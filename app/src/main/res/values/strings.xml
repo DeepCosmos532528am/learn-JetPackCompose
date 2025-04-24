@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">JetpackCompose</string>
+    <string name="developer_intro">Hello , I am Sachin</string> <!--String Resources are used instead of hardcoding strings directly in the UI or code
+    for flexibility, reusability, and maintainability.-->
+
+
 </resources>
