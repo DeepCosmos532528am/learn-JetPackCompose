@@ -23,7 +23,14 @@
     Text("Item 2")
 }</code>
 <h5>➤ Column</h5>
-                <img src="../../Pictures/Screenshots/Screenshot%202025-04-25%20021109.png" alt="Column Layout" width="500">
+               <code>Column(
+    modifier = Modifier.fillMaxHeight(),
+    verticalArrangement = Arrangement.SpaceEvenly,
+    horizontalAlignment = Alignment.CenterHorizontally
+) {
+    Text("Item A")
+    Text("Item B")
+}</code>
 <h4>⚙️ Key Parameters</h4>
                 <table border="1" cellpadding="5">
                     <thead>
@@ -59,9 +66,23 @@
        <h4>🔍 Notes</h4>
                 <p>You can only use one Arrangement and one Alignment per axis.</p>
  <h4>To center the Row or Column inside the screen, wrap them inside a Box with:</h4>
-                <img src="../../Pictures/Screenshots/Screenshot%202025-04-25%20021128.png" alt="Center Row and Column" width="500">
+                <code>Box(
+    modifier = Modifier.fillMaxSize(),
+    contentAlignment = Alignment.Center
+) {
+    Row / Column {
+        // Add your composable elements here
+    }
+}</code>
 <h4>📌 Common Arrangements</h4>
-                <img src="../../Pictures/Screenshots/Screenshot%202025-04-25%20021141.png" alt="Common Arrangements" width="500">
+               <details>val arrangementTypes = listOf(
+    Arrangement.Start,
+    Arrangement.End,
+    Arrangement.Center,
+    Arrangement.SpaceBetween,
+    Arrangement.SpaceAround,
+    Arrangement.SpaceEvenly
+)</details>
 <h4>Get the idea of Arrangements and Alignments for Row, Column, and Box layout (Box have Alignment only, not arrangements like Column and Row layouts)</h4>
 <code>Axis:
 Alignment = Cross Axis (Row = Vertical, Column = Horizontal)
@@ -77,7 +98,6 @@ ColumnArrangement: Top, Center, Bottom, SpaceEvenly, SpaceBetween, SpaceAround.
 Box:
 BoxAlignment: TopStart, TopCenter, TopEnd, BottomStart, BottomCenter, BottomEnd,
                 Center, CenterStart, CenterEnd.</code>
-
 <h4>✅ Best Practices</h4>
                 <ul>
                     <li>Use <code>modifier = Modifier.fillMaxSize()</code> to make sure layout fills available space, allowing alignment and arrangement to work properly.</li>
