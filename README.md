@@ -56,7 +56,7 @@
 <h4>📌 Common Arrangements</h4>
                 <img src="../../Pictures/Screenshots/Screenshot%202025-04-25%20021141.png" alt="Common Arrangements" width="500">
 <h4>Get the idea of Arrangements and Alignments for Row, Column, and Box layout (Box have Alignment only, not arrangements like Column and Row layouts)</h4>
-                <img src="../../Pictures/Screenshots/Screenshot%202025-04-25%20015504.png" alt="Row Layout" width="500">
+    <img src="assets/Screenshot-2025-04-25-015504.png" alt="Row Layout" width="500">
 <h4>✅ Best Practices</h4>
                 <ul>
                     <li>Use <code>modifier = Modifier.fillMaxSize()</code> to make sure layout fills available space, allowing alignment and arrangement to work properly.</li>
