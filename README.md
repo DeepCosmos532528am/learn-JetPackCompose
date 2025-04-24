@@ -14,7 +14,7 @@
     <p>They are used to arrange UI elements either horizontally (Row) or vertically (Column).</p>
                 <h4>🔸 Syntax</h4>
       <h5>➤ Row</h5>
-                <img src="../../Pictures/Screenshots/Screenshot%202025-04-25%20015504.png" alt="Row Layout" width="500">
+                <img src="C:\Users\LOQ\Pictures\Screenshots\Screenshot 2025-04-25 015504.png" alt="Row Layout" width="500">
 <h5>➤ Column</h5>
                 <img src="../../Pictures/Screenshots/Screenshot%202025-04-25%20021109.png" alt="Column Layout" width="500">
 <h4>⚙️ Key Parameters</h4>
