@@ -102,7 +102,9 @@ BoxAlignment: TopStart, TopCenter, TopEnd, BottomStart, BottomCenter, BottomEnd,
                     <li>Use <code>modifier = Modifier.fillMaxSize()</code> to make sure layout fills available space, allowing alignment and arrangement to work properly.</li>
                     <li>Wrap multiple composables in Column or Row instead of placing them separately in setContent.</li>
                 </ul>
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<hr style="border: 3px solid #000;">
+
+
 <h2>QuickHelp:LearnButtonAndImage.kt</h2>
 
 <h1>🚀 Understand Button, Image & Toast with Example</h1>
