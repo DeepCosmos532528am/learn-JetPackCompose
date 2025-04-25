@@ -102,6 +102,121 @@ BoxAlignment: TopStart, TopCenter, TopEnd, BottomStart, BottomCenter, BottomEnd,
                     <li>Use <code>modifier = Modifier.fillMaxSize()</code> to make sure layout fills available space, allowing alignment and arrangement to work properly.</li>
                     <li>Wrap multiple composables in Column or Row instead of placing them separately in setContent.</li>
                 </ul>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<h2>QuickHelp:LearnButtonAndImage.kt</h2>
+
+<h1>🚀 Understand Button, Image & Toast with Example</h1>
+ <p>This demo shows how to use <strong>Button</strong>, <strong>Image</strong>, and <strong>Toast</strong> in Jetpack Compose — the basic UI components used in almost all Android apps.</p>
+
+<hr>
+    <h2>🔘 Button in Jetpack Compose</h2>
+    <p>A <strong>Button</strong> allows users to perform actions. For example, in Amazon, the <em>"Buy Now"</em> button places your order.</p>
+ <h4>✅ Code:</h4>
+    <pre><code>
+Button(onClick = { /* show toast */ }) {
+Text("Download")
+}</code></pre>
+<h4>🧾 Parameters explained:</h4>
+    <ul>
+        <li><strong>onClick:</strong> What should happen when the button is clicked (e.g., show a Toast).</li>
+        <li><strong>enabled:</strong> Whether the button is active. If <code>false</code>, it's greyed out and not clickable.</li>
+        <li><strong>shape:</strong> Defines the shape of the button — like rounded corners.</li>
+        <li><strong>colors:</strong> Sets the background and text colors, including disabled colors.</li>
+    </ul>
+<h4>🎨 Example of setting colors:</h4>
+    <pre><code>
+colors = ButtonDefaults.buttonColors(
+containerColor = Color.Blue,
+contentColor = Color.Yellow,
+disabledContainerColor = Color.LightGray,
+disabledContentColor = Color.Black
+)
+</code></pre>
+ <h4>🧠 What does <code>enabled</code> do?</h4>
+    <p>If you want to show the button but not let the user click it (like when a form isn't complete), you can use <code>enabled = false</code>. You can change it to <code>true</code> later when ready.</p>
+<h4>📱 Real App Examples:</h4>
+    <ul>
+        <li><strong>Amazon</strong> – “Buy Now” button is disabled when out of stock.</li>
+        <li><strong>Zomato</strong> – “Place Order” is only enabled when all info is filled.</li>
+    </ul>
+<hr>
+ <h2>🖼️ Image in Jetpack Compose</h2>
+    <p>Images help make the UI attractive and informative. You can load local images from the <code>drawable</code> folder.</p>
+<h4>✅ Code:</h4>
+    <pre><code>Image(
+painter = painterResource(id = R.drawable.daco),
+contentDescription = "Image",
+modifier = Modifier.border(color = Color.Black, width = 2.dp, shape = CircleShape)
+)
+</code></pre>
+ <h4>🧾 Parameters explained:</h4>
+    <ul>
+        <li><strong>painter:</strong> Loads the image from resources.</li>
+        <li><strong>contentDescription:</strong> Describes the image for accessibility tools.</li>
+        <li><strong>modifier:</strong> Adds styling like border, padding, shape, etc.</li>
+    </ul>
+<h4>📱 Real App Examples:</h4>
+    <ul>
+        <li><strong>Instagram</strong> – Circular profile pictures with borders.</li>
+        <li><strong>LinkedIn</strong> – Profile photos with soft white borders.</li>
+    </ul>
+ <hr>
+<h2>🔔 Toast in Jetpack Compose</h2>
+    <p>A <strong>Toast</strong> is a small message popup used to give feedback, like “Message Sent” or “Downloading…”</p>
+<h4>✅ Code:</h4>
+    <pre><code>val context = LocalContext.current.applicationContext
+Toast.makeText(context, "Downloading...", Toast.LENGTH_SHORT).show()
+</code></pre>
+ <h4>🧾 Parameters explained:</h4>
+    <ul>
+        <li><strong>context:</strong> Where the Toast should be shown (usually current screen).</li>
+        <li><strong>message:</strong> Text shown in the popup.</li>
+        <li><strong>duration:</strong> Time Toast stays visible (<code>SHORT</code> or <code>LONG</code>).</li>
+    </ul>
+<h4>📱 Real App Examples:</h4>
+    <ul>
+        <li><strong>WhatsApp</strong> – “Message deleted” after deleting a chat message.</li>
+        <li><strong>Paytm</strong> – “Copied to clipboard” after copying UPI ID.</li>
+    </ul><hr>
+<h2>🧱 Using Image and Button Together</h2>
+    <p>We can place both Image and Button inside a <code>Column</code> to align them one below the other.</p>
+<h4>✅ Code:</h4>
+    <pre><code>
+Column(
+modifier = Modifier.fillMaxSize(),
+verticalArrangement = Arrangement.Center,
+horizontalAlignment = Alignment.CenterHorizontally
+) {
+Learn_Image()
+Learn_Button()
+}
+</code></pre>
+<h4>📱 Real App Examples:</h4>
+    <ul>
+        <li><strong>Spotify</strong> – Album image with Play button below it.</li>
+        <li><strong>YouTube</strong> – Thumbnail with “Watch Later” or “Download” button below.</li>
+    </ul>
+<h2>📌 Final Summary</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Feature</th>
+            <th>Real-Life Usage</th>
+        </tr>
+        <tr>
+            <td><strong>Button</strong></td>
+            <td>Submit, Buy, Play, Order actions</td>
+        </tr>
+        <tr>
+            <td><strong>Image</strong></td>
+            <td>Profile pictures, banners, product images</td>
+        </tr>
+        <tr>
+            <td><strong>Toast</strong></td>
+            <td>Quick messages like “Saved”, “Copied”, “Deleted”</td>
+        </tr>
+    </table>
+
+
 
 </body>
 </html>
