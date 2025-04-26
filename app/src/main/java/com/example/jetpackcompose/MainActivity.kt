@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -18,7 +19,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.jetpackcompose.ui.theme.JetpackComposeTheme
+import com.example.jetpackcompose.ui.theme.Jetpackcomposables.Image_Button_UI
+import com.example.jetpackcompose.ui.theme.Jetpackcomposables.LearnText_and_Modifiers
+import com.example.jetpackcompose.ui.theme.Jetpackcomposables.Learn_Button
+import com.example.jetpackcompose.ui.theme.Jetpackcomposables.Learn_Image
+import com.example.jetpackcompose.ui.theme.Jetpackcomposables.Learn_Modifiers
 import com.example.jetpackcompose.ui.theme.Jetpackcomposables.Row_Column_Box
+import com.example.jetpackcompose.ui.theme.Jetpackcomposables.StateTestScreen
+import com.example.jetpackcompose.ui.theme.Jetpackcomposables.StateTestScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,13 +47,17 @@ class MainActivity : ComponentActivity() {
                 Column(
                     // The correct way to do so using Column!
                     modifier = Modifier.fillMaxSize()
-                ) {
-                    //   LearnText_and_Modifiers() //no. 1
-                    //   Learn_Modifiers() //no.1
-                    //  Greeting(", Welcome Ji, I am by default text ")
+                )
+                {
+                    /* LearnText_and_Modifiers() //no. 1
+                      Learn_Modifiers() //no.1
+                      Greeting(", Welcome Ji, I am by default text ")*/
+                    /* Learn_Button() //no.3*/
+                    /* Learn_Image() //no.3*/
                 }
-
-                Row_Column_Box()
+                /*Row_Column_Box() //no.2*/
+                /*Image_Button_UI() //no.3*/
+                StateTestScreen()
 
 
             }
