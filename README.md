@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Learn Jetpack Compose</h1>
-    <h2>QuickHelp: Row_Column_Box_layouts.kt</h2>
+    <h2>🚀QuickHelp: Row_Column_Box_layouts.kt</h2>
     <h3> Row and Column in Jetpack Compose </h3>
   <h4>🔹 What are Row and Column?</h4>
     <p>Row and Column are composable layout components in Jetpack Compose.</p>
@@ -103,11 +103,9 @@ BoxAlignment: TopStart, TopCenter, TopEnd, BottomStart, BottomCenter, BottomEnd,
                     <li>Wrap multiple composables in Column or Row instead of placing them separately in setContent.</li>
                 </ul>
 <hr style="border: 3px solid #000;">
+<h2>🚀 QuickHelp:LearnButtonAndImage.kt</h2>
 
-
-<h2>QuickHelp:LearnButtonAndImage.kt</h2>
-
-<h1>🚀 Understand Button, Image & Toast with Example</h1>
+<p> Understand Button, Image & Toast with Example</p>
  <p>This demo shows how to use <strong>Button</strong>, <strong>Image</strong>, and <strong>Toast</strong> in Jetpack Compose — the basic UI components used in almost all Android apps.</p>
 
 <hr>
@@ -218,7 +216,7 @@ Learn_Button()
         </tr>
     </table>
 <hr style="border: 3px solid #000;">
-<h2>QuickHelp:State4.kt</h2>
+<h2>🚀QuickHelp:State4.kt</h2>
 <div>
     <h2>Word-by-Word Breakdown:</h2>
     <table border="1">
