@@ -217,6 +217,54 @@ Learn_Button()
             <td>Quick messages like “Saved”, “Copied”, “Deleted”</td>
         </tr>
     </table>
+<hr style="border: 3px solid #000;">
+<h2>QuickHelp:State4.kt</h2>
+<div>
+    <h2>Word-by-Word Breakdown:</h2>
+    <table border="1">
+        <tr>
+            <th>Part</th>
+            <th>Meaning in Easy Words</th>
+        </tr>
+        <tr>
+            <td><code>var</code></td>
+            <td>I am creating a <strong>changeable</strong> variable (value can be updated).</td>
+        </tr>
+        <tr>
+            <td><code>name</code></td>
+            <td>The <strong>name</strong> of my variable is <code>name</code>.</td>
+        </tr>
+        <tr>
+            <td><code>by</code></td>
+            <td>I am <strong>giving the work</strong> (getting and setting the value) to a helper automatically. (No need to write <code>.value</code> manually.)</td>
+        </tr>
+        <tr>
+            <td><code>remember</code></td>
+            <td>I am telling Compose: <strong>"Please save this value and don't forget it when the screen updates."</strong></td>
+        </tr>
+        <tr>
+            <td><code>{}</code> (curly brackets)</td>
+            <td>Inside, I am <strong>creating</strong> the real value.</td>
+        </tr>
+        <tr>
+            <td><code>mutableStateOf("")</code></td>
+            <td>I am creating a <strong>changeable value</strong> (State) with <strong>initial value as an empty string ("")</strong>.</td>
+        </tr>
+    </table>
+
+    <h3>Very Short Meaning:</h3>
+    <p><strong>"I am creating a changeable variable called <code>name</code>, which will keep its value safe across screen updates, and I can use it easily without extra code."</strong></p>
+
+    <h3>How it Works:</h3>
+    <ul>
+        <li>When the app redraws the screen, <code>name</code> will not lose its value.</li>
+        <li>And you can simply use <code>name</code> like a normal string!</li>
+    </ul>
+
+    <h3>Real Life Example - Popular App:</h3>
+    <p>Imagine the "WhatsApp" app, where you type a message. If you are typing and the screen updates (e.g., keyboard pops up or UI refreshes), the message you typed is remembered, and the text you are typing doesn't get lost. This is similar to how <code>remember</code> works — it saves the message (or value) you are working with, even when the screen refreshes.</p>
+</div>
+
 
 
 
